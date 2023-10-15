@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VehicleManagementFinal</string>
+    <string-array name="vehicle_types">
+        <item>Car</item>
+        <item>Motorbike</item>
+    </string-array>
+</resources>

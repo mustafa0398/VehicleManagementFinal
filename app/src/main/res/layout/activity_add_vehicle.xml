@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/vehicle_types" />
+
+    <EditText
+        android:id="@+id/manufacturerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerVehicleType"
+        android:hint="Manufacturer" />
+
+    <EditText
+        android:id="@+id/modelNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manufacturerEditText"
+        android:hint="Model Name" />
+
+    <EditText
+        android:id="@+id/certificateDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Certificate Date"
+        android:layout_below="@id/modelNameEditText" />
+
+    <EditText
+        android:id="@+id/seatsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Seats"
+        android:visibility="gone"
+        android:layout_below="@id/certificateDateEditText" />
+
+    <CheckBox
+        android:id="@+id/electricCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Electric"
+        android:visibility="gone"
+        android:layout_below="@id/seatsEditText" />
+
+    <Button
+        android:id="@+id/btnAddVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/electricCheckBox"
+        android:text="Add Vehicle" />
+
+</RelativeLayout>
